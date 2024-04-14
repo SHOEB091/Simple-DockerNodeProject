@@ -1,0 +1,30 @@
+npm init -y
+
+chaneg package.json 
+
+script ->  "start" : "index.js"
+ 
+npm i express // helps us to create a APIs and webb server 
+
+getting started node 
+
+delete node modules form directory 
+
+create a Dockerfile
+
+FROM node:slim
+WORKDIR /new
+COPY . /new
+RUN npm install
+EXPOSE 3000
+CMD node index.js
+
+
+in terminal
+-t is a tag option to give a tag 
+docker build -t shoeb091/heyNodejs:0.0.1.RELEASE .
+
+
+
+to RUN the image 
+ docker container run -d -p 3000:3000 shoeb091/hey-nodejs
